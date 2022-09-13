@@ -18,11 +18,11 @@ func main() {
 			Channels: channelArr,
 			File:     fileArr[i],
 		}
-		File, err := api.UploadFile(params)
+		file, err := api.UploadFile(params)
 		if err != nil {
 			fmt.Printf("%\n", err)
 			return
 		}
-		fmt.Printf("Name: %s, URL:%\n", file.Name file.URL)
+		fmt.Printf("Name: %s, URL:%\n", file.Name, file.URL)
 	}
 }
